@@ -1,0 +1,23 @@
+[package]
+name = "ason-query"
+version = "0.1.0"
+edition = "2021"
+
+license = "MPL-2.0"
+description = "ASON Query is a powerful tool for processing ASON data. It can query, manipulate, and generate new ASON data."
+homepage = "https://hemashushu.github.io/works/ason/ason-query"
+documentation = "https://hemashushu.github.io/works/ason/ason-query"
+repository = "https://github.com/hemashushu/ason-query"
+readme = "README.md"
+keywords = ["ason", "processor", "json", "serde", "xiaoxuan"]
+categories = ["encoding"]
+
+[dependencies]
+ason = { git = "https://github.com/hemashushu/ason-rs.git", rev = "9e6c909bf4542291c8dd04c2184829c932262356" }
+# clap is more common, but the size is larger
+argh = "0.1.12"
+
+[dev-dependencies]
+pretty_assertions = "1.4.0"
+
+[features]
