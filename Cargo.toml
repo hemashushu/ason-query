@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 license = "MPL-2.0"
-description = "ASON Query is a powerful tool for processing ASON data. It can query, manipulate, and generate new ASON data."
+description = "ASON Query is a powerful tool for querying, manipulating and generating ASON data."
 homepage = "https://hemashushu.github.io/works/ason/ason-query"
 documentation = "https://hemashushu.github.io/works/ason/ason-query"
 repository = "https://github.com/hemashushu/ason-query"
@@ -17,7 +17,9 @@ name = "aq"
 path = "src/main.rs"
 
 [dependencies]
-ason = { git = "https://github.com/hemashushu/ason-rs.git", rev = "9e6c909bf4542291c8dd04c2184829c932262356" }
+# ason = { git = "https://github.com/hemashushu/ason-rs.git", rev = "9e6c909bf4542291c8dd04c2184829c932262356" }
+ason = {path = "/home/yang/projects/ason-rs"}
+
 # argh vs clap
 # clap is more common, but the size is larger.
 # argh = "0.1.12"
